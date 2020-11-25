@@ -81,12 +81,43 @@ schnee{0%{
     font-family: 'Carter One', cursive;
 }
 
+.door-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.junusDoor {
+    margin-right: 16px;
+    margin-left: 16px;
+    width: 160px;
+    height: 160px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/door.jpeg');
+    cursor: pointer;
+    background-size: cover;
+    transform-origin: left;
+    transition: all 1s ease-in-out; /* ALLE CSS Eigenschaften die sich verändern werden animiert  */
+}
+
+.openDoor {
+    transform: perspective(500px) rotateY(-95deg);
+}
+
+.junusDoor h1 {
+    color: red;
+    font-size: 32px;
+}
+
 .door {
     width: 200px;
     height: 200px;
     display: flex;
     margin-left: 20px;
     z-index: 2;
+    cursor: pointer;
 }
 
 .doors1 {
@@ -153,57 +184,14 @@ schnee{0%{
     margin-right: 100px;
 }
 
-.numbers1 {
-    position: absolute;
-    display: flex;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.numbers2 {
-    position: absolute;
-    display: flex;
-    margin-top: 340px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.numbers3 {
-    position: absolute;
-    display: flex;
-    margin-top: 580px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.numbers4 {
-    position: absolute;
-    display: flex;
-    margin-top: 820px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.numbers {
-    width: 200px;
-    height: 200px;
-    margin-left: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Anton', sans-serif;
-    color: rgb(168, 13, 20);
-    font-size: 70;
-    text-shadow: 3px 3px #333333;
-    z-index: 3;
-}
-
 .pic {
     width: 200px;
     height: 200px;
     display: flex;
     margin-left: 20px;
     z-index: 1;
+}
+
+.d-none {
+    display: none;
 }
