@@ -1,7 +1,7 @@
 function init() {
     changeLanguage();
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 24; i++) {
         let id = 'door' + i;
         document.getElementById(id).innerHTML = `<h1>${i}</h1>`;
     }
