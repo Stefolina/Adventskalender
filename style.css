@@ -115,6 +115,10 @@ schnee{0%{
     transform: perspective(500px) rotateY(-95deg);
 }
 
+.tile-today {
+    transform: perspective(500px) rotateY(-95deg);
+}
+
 .junusDoor h1 {
     font-family: 'Anton', sans-serif;
     color: rgb(168, 13, 20);
