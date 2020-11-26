@@ -1,0 +1,6 @@
+
+font-family: 'Anton', sans-serif;
+color: rgb(168, 13, 20);
+font-size: 70;
+text-shadow: 3px 3px #333333;
+z-index: 3;
