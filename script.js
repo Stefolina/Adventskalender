@@ -30,13 +30,8 @@ function changeLanguage() {
 
 }
 
-function openDoorNew(doorNumber) {
+function openDoor(doorNumber) {
     let id = 'door' + doorNumber;
     document.getElementById(id).classList.add('openDoor');
 }
 
-
-function openDoor() {
-    document.getElementById('doors').classList.remove('door');
-    document.getElementById('doors').classList.add('d-none');
-}
