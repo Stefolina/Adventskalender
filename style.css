@@ -14,6 +14,11 @@ body {
     font-size: 30;
 }
 
+.audio {
+    width: 300px;
+    height: 30px;
+}
+    
 .bg-pic {
     object-fit: cover;
     width: 100%;
@@ -115,7 +120,7 @@ schnee{0%{
     transform: perspective(500px) rotateY(-95deg);
 }
 
-.tile-today {
+.doorOpened {
     transform: perspective(500px) rotateY(-95deg);
 }
 
@@ -154,4 +159,218 @@ schnee{0%{
 
 .d-none {
     display: none;
+}
+
+@media(max-width: 1283px) {
+    .door-row {
+        margin-left: 10px;
+        margin-right: 200px;
+        margin-top: 20px;
+        margin-bottom: 180px;
+    }
+}
+
+@media(max-width: 1055px) {
+    .door-row {
+        margin-left: 100px;
+        margin-right: 210px;
+        margin-top: 20px;
+        margin-bottom: 180px;
+    }
+
+    .junusDoor {
+        width: 120px;
+        height: 120px;
+    }
+
+    .junusDoor h1 {
+        font-size: 45;
+    }
+
+    .pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media(max-width: 951px) {
+    .door-row {
+        margin-left: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        margin-bottom: 180px;
+    }
+}
+
+@media(max-width: 880px) {
+    .door-row {
+        margin-left: 20px;
+        margin-right: 160px;
+        margin-top: 20px;
+        margin-bottom: 140px;
+    }
+}
+
+@media(max-width: 815px) {
+    .door-row {
+        margin-left: 20px;
+        margin-right: 160px;
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+
+    .junusDoor {
+        width: 100px;
+        height: 100px;
+    }
+
+    .junusDoor h1 {
+        font-size: 40;
+    }
+
+    .pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 720px) {
+    .door-row {
+        margin-left: 10px;
+        margin-right: 130px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    .junusDoor {
+        width: 90px;
+        height: 90px;
+    }
+
+    .pic {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media(max-width: 628px) {
+
+    .junusDoor {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pic {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media(max-width: 575px) {
+    .header {
+        font-size: 18;
+    }
+
+    .door-row {
+        margin-bottom: 70px;
+    }
+
+    .junusDoor h1 {
+        font-size: 29;
+    }
+
+    .junusDoor {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pic {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(max-width: 470px) {
+    .header {
+        font-size: 16;
+    }
+
+    .junusDoor h1 {
+        font-size: 30;
+    }
+
+    .junusDoor {
+        width: 55px;
+        height: 55px;
+    }
+
+    .pic {
+        width: 55px;
+        height: 55px;
+    }
+
+    .Background {
+        background-size: 400px;
+        padding-bottom: 40px;
+        padding-top: 0px;
+    }
+    
+    .door-row {
+        margin-left: 0px;
+        margin-right: 78px;
+        margin-top: 2px;
+        margin-bottom: 70px;
+    }
+}
+
+@media(max-width: 376px) {
+
+    .header {
+        font-size: 14;
+    }
+}
+
+@media(max-width: 321px) {
+
+    .header {
+        font-size: 10;
+    }
+
+    .audio {
+        width: 200px;
+    }
+
+    .junusDoor h1 {
+        font-size: 28;
+    }
+
+    .junusDoor {
+        width: 45px;
+        height: 45px;
+    }
+
+    .pic {
+        width: 45px;
+        height: 45px;
+    }
+
+    .Background {
+        background-size: 600px;
+        padding-top: 5px;
+        padding-bottom: 60px;
+    }
+    
+    .door-row {
+        margin-left: 0px;
+        margin-right: 78px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+
+    .snow2 {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        margin-top: 0px;
+        font-size: 15;
+    }
 }
