@@ -5,17 +5,21 @@ function init() {
         let id = 'door' + i;
         document.getElementById(id).innerHTML = `<h1>${i}</h1>`;
     }
+    if (i <= 24) {
+        document.getElementById(id).classList.add('junusDoor h1')
+    }
 
-    /*let currentDay = new Date().getDate();
+    let currentDay = new Date().getDate();
 
     for (let i = 1; i <=24; i++) {
         let id ='door' + i;
 
         document.getElementById(id).innerHTML = i;
     }
-        if (i <= currentDay) {
-            document.getElementById(id).classList.add('doorOpened');
-        }*/
+    
+    if (i <= currentDay) {
+         document.getElementById(id).classList.add('doorOpened');
+     }
 }
 
 function changeLanguage() {
