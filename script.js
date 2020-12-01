@@ -3,23 +3,8 @@ function init() {
 
     for (let i = 1; i <= 24; i++) {
         let id = 'door' + i;
-        document.getElementById(id).innerHTML = `<h1>${i}</h1>`;
+        document.getElementById(id).innerHTML =  `<h1>${i}</h1>`;;
     }
-    if (i <= 24) {
-        document.getElementById(id).classList.add('junusDoor h1')
-    }
-
-    let currentDay = new Date().getDate();
-
-    for (let i = 1; i <=24; i++) {
-        let id ='door' + i;
-
-        document.getElementById(id).innerHTML = i;
-    }
-    
-    if (i <= currentDay) {
-         document.getElementById(id).classList.add('doorOpened');
-     }
 }
 
 function changeLanguage() {
@@ -39,15 +24,18 @@ function changeLanguage() {
         document.getElementById('language').innerHTML = 'Viel Spaß damit!';
     }, 9000);
 
-    setTimeout(function () {
-        changeLanguage();
-    }, 12000);
-
+    setTimeout(changeLanguage, 12000);
 }
 
 function openDoor(doorNumber) {
-    let id = 'door' + doorNumber;
-    document.getElementById(id).classList.add('openDoor');
+    let currentDay = new Date().getDate();
+
+    if (currentDay >= doorNumber) {
+        let id = 'door' + doorNumber;
+        document.getElementById(id).classList.add('openDoor');
+    } else {
+        alert('Geduld ist eine Tugend');
+    }
 }
 
 
